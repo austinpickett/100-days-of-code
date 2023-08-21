@@ -1,19 +1,22 @@
 'use client';
 
 import { useEffect } from 'react';
-import { day01 } from './sketches/day01';
-import { day02 } from './sketches/day02';
-import { day03 } from './sketches/day03';
-import { day04 } from './sketches/day04';
-import { day05 } from './sketches/day05';
 
 export default function Home() {
   useEffect(() => {
-    day01();
-    day02();
-    day03();
-    day04();
-    day05();
+    (async () => {
+      const { day01 } = await import('./sketches/day01');
+      const { day02 } = await import('./sketches/day02');
+      const { day03 } = await import('./sketches/day03');
+      const { day04 } = await import('./sketches/day04');
+      const { day05 } = await import('./sketches/day05');
+
+      day01();
+      day02();
+      day03();
+      day04();
+      day05();
+    })();
   }, []);
 
   return (
