@@ -1,6 +1,7 @@
+'use client';
 import P5 from 'p5';
 
-export const day01 = () =>
+export const day01 = () => {
   new P5((inst) => {
     const p = inst as P5;
 
@@ -100,3 +101,4 @@ export const day01 = () =>
       p.pop();
     };
   }, document.querySelector('.day-01') as HTMLElement);
+};
