@@ -5,7 +5,7 @@ export const day03 = () =>
     const p = inst as P5;
 
     p.setup = () => {
-      p.createCanvas(1000, 1000);
+      p.createCanvas(1000, 640);
       p.background('#FFF');
       p.noFill();
 
