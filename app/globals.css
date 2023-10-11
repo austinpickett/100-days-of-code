@@ -46,3 +46,21 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #111;
 }
+
+::selection {
+  background: #fff;
+  color: #000;
+}
+
+img::selection {
+  background: none;
+}
+
+img {
+  transition: all ease 0.5s;
+}
+
+img:hover {
+  webkit-filter: blur(3px);
+  filter: blur(3px);
+}
