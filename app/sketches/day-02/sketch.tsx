@@ -1,6 +1,6 @@
 import P5 from 'p5';
 
-export const day02 = () =>
+export const sketch = () =>
   new P5((inst) => {
     const p = inst as P5;
 
@@ -33,3 +33,5 @@ export const day02 = () =>
       }
     };
   }, document.querySelector('.day-02') as HTMLElement);
+
+export default sketch;

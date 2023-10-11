@@ -1,7 +1,7 @@
 'use client';
 import P5 from 'p5';
 
-export const day01 = () => {
+export const sketch = () => {
   new P5((inst) => {
     const p = inst as P5;
 
@@ -102,3 +102,5 @@ export const day01 = () => {
     };
   }, document.querySelector('.day-01') as HTMLElement);
 };
+
+export default sketch;

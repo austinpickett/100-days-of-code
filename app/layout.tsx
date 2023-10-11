@@ -13,7 +13,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body>{children}</body>
+      <body>
+        <main className='flex min-h-screen flex-col items-center justify-between p-24'>
+          <div className='z-10 max-w-5xl w-full items-center justify-between font-mono text-sm'>
+            <a href='/'>
+              <h1 className='font-bold text-lg mb-2'>./100-days-of-code</h1>
+            </a>
+            {children}
+          </div>
+        </main>
+      </body>
     </html>
   );
 }

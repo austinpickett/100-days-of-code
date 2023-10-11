@@ -1,6 +1,7 @@
 import P5 from 'p5';
 
-export const day05 = () =>
+// eslint-disable-next-line import/no-anonymous-default-export
+export const sketch = () =>
   new P5((inst) => {
     const p = inst as P5;
 
@@ -19,8 +20,6 @@ export const day05 = () =>
       const spacing = 100;
       const rows = p.height / spacing;
       const cols = p.width / spacing;
-
-      console.log({ rows, cols });
 
       p.translate(50, 50);
 
