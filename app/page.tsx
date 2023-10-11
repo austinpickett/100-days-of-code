@@ -6,7 +6,7 @@ const latest: number = 6;
 
 export default function Home() {
   return (
-    <div className='grid grid-cols-3'>
+    <div className='grid sm:grid-cols-3'>
       {Array.from({ length: latest }, (_, i) => i).map((v) => {
         const day = `day-${String(v + 1).padStart(2, '0')}`;
 
