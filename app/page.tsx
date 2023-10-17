@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 
-const latest: number = 6;
+const latest: number = 7;
 
 export default function Home() {
   return (
